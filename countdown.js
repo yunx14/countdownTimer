@@ -12,6 +12,7 @@ document.getElementById("form").addEventListener('click', e => {
 
 function startCountdown() {
     document.getElementById("app").innerHTML = `
+    <div class="bg">
     <div class="base-timer">
     <svg class="base-timer__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
         <g class="base-timer__circle">
@@ -32,6 +33,7 @@ function startCountdown() {
     <span id="base-timer-label" class="base-timer__label">${formatTime(
         timeLeft
     )}</span>
+    </div>
     </div>
     `;
 
